@@ -20,11 +20,12 @@
       <span></span><span></span><span></span>
     </button>
     <nav class="nav-links" id="navLinks">
-      <a href="#bronze"><span class="line-no">01</span> about</a>
-      <a href="#silver"><span class="line-no">02</span> skills</a>
-      <a href="#gold"><span class="line-no">03</span> projects</a>
-      <a href="#cdc"><span class="line-no">04</span> writing</a>
-      <a href="#contact"><span class="line-no">05</span> contact</a>
+      <a href="#gold"><span class="line-no">01</span> projects</a>
+      <a href="#architecture"><span class="line-no">02</span> architecture</a>
+      <a href="#bronze"><span class="line-no">03</span> experience</a>
+      <a href="#silver"><span class="line-no">04</span> skills</a>
+      <a href="#cdc"><span class="line-no">05</span> writing</a>
+      <a href="#contact"><span class="line-no">06</span> contact</a>
     </nav>
   </div>
 </header>
@@ -32,44 +33,193 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="hero-grid"></div>
-  <div class="container hero-inner">
-    <div class="terminal-window">
-      <div class="terminal-titlebar">
-        <span class="dot dot-red"></span>
-        <span class="dot dot-yellow"></span>
-        <span class="dot dot-green"></span>
-        <span class="terminal-title">jhanvi@portfolio: ~</span>
+  <div class="container">
+    <div class="hero-layout">
+
+      <div class="hero-text">
+        <span class="hero-badge">Azure Databricks Data Engineer Associate</span>
+        <h1 class="hero-name">Jhanvi Soni</h1>
+        <p class="hero-role">Data Engineer <span class="dot-sep">·</span> Databricks Platform Engineer <span class="dot-sep">·</span> Analytics Engineer</p>
+        <p class="hero-location">Houston, Texas</p>
+        <p class="hero-bio">Data Engineer with 3.5+ years building production-grade ETL/ELT pipelines and analytics platforms across financial services and consulting. I specialize in PySpark, Medallion Architecture, and Delta Lake on Azure and Databricks — turning fragmented, multi-source data into trusted, production-ready pipelines.</p>
+
+        <div class="hero-actions">
+          <a href="#gold" class="btn btn-primary">View Projects</a>
+          <a href="#architecture" class="btn btn-ghost">Explore Architecture</a>
+        </div>
+
+        <div class="chip-row hero-pills">
+          <span class="chip chip-pill">PySpark</span>
+          <span class="chip chip-pill">Medallion Architecture</span>
+          <span class="chip chip-pill">Delta Lake</span>
+          <span class="chip chip-pill">Azure Databricks</span>
+          <span class="chip chip-pill">Data Quality Frameworks</span>
+        </div>
       </div>
-      <div class="terminal-body" id="terminalBody">
-        <p class="term-line"><span class="prompt">$</span> whoami</p>
-        <p class="term-output" id="typeLine1"></p>
-        <p class="term-line term-line-delay"><span class="prompt">$</span> cat mission.txt</p>
-        <p class="term-output" id="typeLine2"></p>
-        <p class="term-line term-line-delay2"><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <span class="frame-corner corner-tl"></span>
+          <span class="frame-corner corner-tr"></span>
+          <span class="frame-corner corner-bl"></span>
+          <span class="frame-corner corner-br"></span>
+          <img src="assets/profile.jpg" alt="Jhanvi Soni" class="hero-photo">
+          <span class="frame-tag frame-tag-top">$ whoami</span>
+          <span class="frame-tag frame-tag-bottom"><span class="status-dot"></span> status: available</span>
+        </div>
       </div>
+
     </div>
 
-    <div class="hero-actions">
-      <a href="#gold" class="btn btn-primary">View Projects</a>
-      <a href="JhanviSoni_Resume.pdf" class="btn btn-ghost" download>Download Résumé</a>
-      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
-    </div>
-
-    <p class="hero-meta">Houston, TX &nbsp;·&nbsp; Open to Data / Analytics / Azure Cloud Engineering roles &nbsp;·&nbsp; Immediately available</p>
+    <a href="#gold" class="scroll-cue">
+      <span>scroll</span>
+      <span class="scroll-arrow">↓</span>
+    </a>
   </div>
 </section>
 
-<!-- ============ BRONZE :: RAW SIGNAL (About / Experience / Education) ============ -->
+<!-- ============ GOLD :: FEATURED PROJECTS ============ -->
+<section class="layer gold" id="gold">
+  <div class="container">
+    <div class="layer-head">
+      <span class="layer-tag layer-tag-gold">GOLD LAYER</span>
+      <h2 class="layer-title">Featured Projects <span class="layer-sub">// curated, business-facing output</span></h2>
+      <p class="layer-desc">Three end-to-end data platforms, each shipped from raw ingestion to a business-ready product.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Financial News Intelligence RAG Platform</h3>
+          <div class="project-links">
+            <a href="https://financial-news-intelligence-rag-spfkf8yfjgbvxuzqiozyth.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a>
+            <a href="https://github.com/Jhanvisoni0/financial-news-intelligence-rag" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-teaser">End-to-end RAG platform grounding LLM answers in SEC filings &amp; financial news, reaching 100% retrieval accuracy on evaluation.</p>
+        <div class="chip-row chip-row-tight">
+          <span class="chip chip-sm">Python</span><span class="chip chip-sm">Azure Databricks</span><span class="chip chip-sm">Delta Lake</span><span class="chip chip-sm">RAG</span><span class="chip chip-sm">OpenAI</span><span class="chip chip-sm">ChromaDB</span><span class="chip chip-sm">MLflow</span><span class="chip chip-sm">Terraform</span><span class="chip chip-sm">GitHub Actions</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Architected an end-to-end RAG pipeline on Azure Databricks (Medallion architecture) ingesting SEC filings and financial news for 5 public companies, reaching 100% retrieval accuracy on a 15-question evaluation set.</li>
+          <li>Diagnosed a data-quality defect where inline XBRL markup silently corrupted filing text, restoring feature-engineering accuracy from 0% to expected levels via root-cause analysis.</li>
+          <li>Built a citation-grounded generation system with LLM-as-judge evaluation, improving citation precision and validating hallucination resistance on deliberately unanswerable test cases.</li>
+          <li>Resolved a memory-constrained deployment failure by re-architecting the embedding layer from local inference to an API-based approach, cutting deployment memory footprint with zero ongoing infra cost.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Retail Banking Customer Analytics Platform</h3>
+          <div class="project-links">
+            <!-- TODO: replace with direct repo link -->
+            <a href="https://github.com/Jhanvisoni0" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-teaser">Customer-360 analytics platform cutting a 4-day reporting cycle down to 15 minutes.</p>
+        <div class="chip-row chip-row-tight">
+          <span class="chip chip-sm">Azure</span><span class="chip chip-sm">Databricks</span><span class="chip chip-sm">PySpark</span><span class="chip chip-sm">Delta Lake</span><span class="chip chip-sm">ADF</span><span class="chip chip-sm">Kafka</span><span class="chip chip-sm">Power BI</span><span class="chip chip-sm">Terraform</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Cut reporting cycle from 4 days to 15 minutes with a Gold-layer customer-360 view (loan-to-deposit ratio, transaction velocity), automated via Databricks Workflows on Terraform-provisioned infra with CI/CD.</li>
+          <li>Ingested 50K transaction records and 5K customer profiles from 3 source systems into ADLS Gen2 via ADF and Auto Loader; simulated real-time streaming with Kafka feeding the Bronze layer.</li>
+          <li>Secured credentials via Key Vault, enforced table-level RBAC via Unity Catalog, and flagged anomalous accounts using a batch-scored Isolation Forest model tracked in MLflow.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Real Assets Investment Intelligence Platform</h3>
+          <div class="project-links">
+            <!-- TODO: replace with direct repo link -->
+            <a href="https://github.com/Jhanvisoni0" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-teaser">Investment analytics platform tracking a simulated $10K portfolio to an 86% return across REITs, infrastructure, and commodities.</p>
+        <div class="chip-row chip-row-tight">
+          <span class="chip chip-sm">Databricks</span><span class="chip chip-sm">PySpark</span><span class="chip chip-sm">Delta Lake</span><span class="chip chip-sm">yfinance / FRED APIs</span><span class="chip chip-sm">MLflow</span><span class="chip chip-sm">Unity Catalog</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Engineered an end-to-end investment analytics platform using Medallion Architecture, ingesting 22,635 rows of live market data for 15 assets via yfinance &amp; FRED APIs into Delta Lake on Unity Catalog.</li>
+          <li>Built PySpark pipelines computing daily returns, rolling volatility, Sharpe ratio, and max drawdown — tracking a simulated $10K portfolio to $18,645 (86% return) over 6 years.</li>
+          <li>Joined Fed Funds Rate data with portfolio returns to reveal REITs returned 23.26% annually in low-rate periods vs. -8.17% in rate-transition periods; surfaced via a live executive dashboard with 90-day forecasts.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE :: SYSTEM DESIGN ============ -->
+<section class="layer architecture" id="architecture">
+  <div class="container">
+    <div class="layer-head">
+      <span class="layer-tag layer-tag-arch">SYSTEM DESIGN</span>
+      <h2 class="layer-title">Medallion Architecture in Practice <span class="layer-sub">// the pattern behind every platform I build</span></h2>
+      <p class="layer-desc">Pattern used across: Financial News RAG Platform, Retail Banking Analytics Platform, Real Assets Investment Intelligence Platform.</p>
+    </div>
+
+    <div class="pipeline">
+      <div class="pipeline-step">
+        <div class="pipeline-icon">01</div>
+        <h4>Raw Sources</h4>
+        <p>APIs, streaming events, and source databases — ingested as-is via ADF, Auto Loader, and Kafka.</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step step-bronze">
+        <div class="pipeline-icon">02</div>
+        <h4>Bronze Layer</h4>
+        <p>Immutable raw ingestion into Delta Lake — full history retained, schema captured as-is.</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step step-silver">
+        <div class="pipeline-icon">03</div>
+        <h4>Silver Layer</h4>
+        <p>Cleaned, deduplicated, conformed — validated against data quality rules, SCD Type 1/2 applied.</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step step-gold">
+        <div class="pipeline-icon">04</div>
+        <h4>Gold Layer</h4>
+        <p>Aggregated, business-ready star-schema tables — optimized via partitioning and Z-ordering.</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <div class="pipeline-icon">05</div>
+        <h4>Consumption</h4>
+        <p>Power BI dashboards, ML models, executive reporting — access governed by Unity Catalog RBAC.</p>
+      </div>
+    </div>
+
+    <h3 class="principles-title">Core Principles</h3>
+    <div class="principles-grid">
+      <div class="principle">
+        <span class="principle-no">01</span>
+        <h4>Schema Enforcement &amp; Data Quality</h4>
+        <p>Automated frameworks catch schema mismatches, nulls, and duplicates before they reach end users — monitoring 100+ feeds in production.</p>
+      </div>
+      <div class="principle">
+        <span class="principle-no">02</span>
+        <h4>Incremental, Scalable Processing</h4>
+        <p>Auto Loader and Delta Live Tables handle incremental ingestion without reprocessing full history.</p>
+      </div>
+      <div class="principle">
+        <span class="principle-no">03</span>
+        <h4>Governance, Lineage &amp; Security</h4>
+        <p>Unity Catalog enforces table-level RBAC, Key Vault secures credentials, and every table's lineage stays traceable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRONZE :: EXPERIENCE ============ -->
 <section class="layer bronze" id="bronze">
   <div class="container">
     <div class="layer-head">
       <span class="layer-tag layer-tag-bronze">BRONZE LAYER</span>
-      <h2 class="layer-title">Raw Signal <span class="layer-sub">// ingestion: where I've been</span></h2>
-      <p class="layer-desc">Unprocessed source data — the raw history behind the refined profile below. Financial services and consulting, 3.5+ years, one throughline: turning messy multi-source data into something people can trust.</p>
-    </div>
-
-    <div class="summary-block">
-      <p><span class="prompt-inline">&gt;</span> Data Engineer with 3.5+ years building production-grade ETL/ELT pipelines and analytics platforms across financial services (Morgan Stanley Capital International) and consulting (Techved). Specializes in PySpark, Medallion Architecture, and Delta Lake on Azure and Databricks — turning fragmented multi-source data into trusted dimensional models that cut reporting cycles from days to minutes. Experienced enabling and mentoring data teams on Databricks workflows and production pipeline practices.</p>
+      <h2 class="layer-title">Experience <span class="layer-sub">// raw signal: where I've been</span></h2>
+      <p class="layer-desc">Financial services and consulting, 3.5+ years, one throughline: turning messy multi-source data into something people can trust.</p>
     </div>
 
     <div class="timeline">
@@ -130,15 +280,35 @@
   </div>
 </section>
 
-<!-- ============ SILVER :: VALIDATED & STRUCTURED (Skills) ============ -->
+<!-- ============ SILVER :: SKILLS ============ -->
 <section class="layer silver" id="silver">
   <div class="container">
     <div class="layer-head">
       <span class="layer-tag layer-tag-silver">SILVER LAYER</span>
-      <h2 class="layer-title">Validated &amp; Structured <span class="layer-sub">// cleaned, deduplicated, schema-enforced</span></h2>
+      <h2 class="layer-title">Skills &amp; Capabilities <span class="layer-sub">// cleaned, deduplicated, schema-enforced</span></h2>
       <p class="layer-desc">The raw signal above, joined and conformed into a structured skill set.</p>
     </div>
 
+    <div class="capabilities-grid">
+      <div class="capability">
+        <h4>Data Engineering &amp; Pipelines</h4>
+        <p>PySpark, ETL/ELT, Medallion Architecture, Delta Lake, dbt</p>
+      </div>
+      <div class="capability">
+        <h4>Orchestration &amp; Workflow</h4>
+        <p>Airflow, Databricks Workflows, Azure Data Factory, Kafka</p>
+      </div>
+      <div class="capability">
+        <h4>Cloud &amp; Infrastructure</h4>
+        <p>Azure (ADLS, Synapse, Key Vault), AWS, Microsoft Fabric, Terraform, CI/CD</p>
+      </div>
+      <div class="capability">
+        <h4>Analytics &amp; BI</h4>
+        <p>Power BI, Tableau, SQL, statistical &amp; time-series methods</p>
+      </div>
+    </div>
+
+    <h3 class="tools-title">Tools &amp; Ecosystem</h3>
     <div class="skills-grid">
       <div class="skill-card">
         <h4>Languages</h4>
@@ -176,76 +346,6 @@
           <span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">Jupyter</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GOLD :: PRODUCTION-READY (Projects) ============ -->
-<section class="layer gold" id="gold">
-  <div class="container">
-    <div class="layer-head">
-      <span class="layer-tag layer-tag-gold">GOLD LAYER</span>
-      <h2 class="layer-title">Production-Ready <span class="layer-sub">// curated, business-facing output</span></h2>
-      <p class="layer-desc">The final layer — aggregated, business-ready builds, each shipped end to end.</p>
-    </div>
-
-    <div class="projects-grid">
-
-      <article class="project-card">
-        <div class="project-head">
-          <h3>Financial News Intelligence RAG Platform</h3>
-          <div class="project-links">
-            <a href="https://financial-news-intelligence-rag-spfkf8yfjgbvxuzqiozyth.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a>
-            <a href="https://github.com/Jhanvisoni0/financial-news-intelligence-rag" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="chip-row chip-row-tight">
-          <span class="chip chip-sm">Python</span><span class="chip chip-sm">Azure Databricks</span><span class="chip chip-sm">Delta Lake</span><span class="chip chip-sm">RAG</span><span class="chip chip-sm">OpenAI</span><span class="chip chip-sm">ChromaDB</span><span class="chip chip-sm">MLflow</span><span class="chip chip-sm">Terraform</span><span class="chip chip-sm">GitHub Actions</span>
-        </div>
-        <ul class="project-bullets">
-          <li>Architected an end-to-end RAG pipeline on Azure Databricks (Medallion architecture) ingesting SEC filings and financial news for 5 public companies, reaching 100% retrieval accuracy on a 15-question evaluation set.</li>
-          <li>Diagnosed a data-quality defect where inline XBRL markup silently corrupted filing text, restoring feature-engineering accuracy from 0% to expected levels via root-cause analysis.</li>
-          <li>Built a citation-grounded generation system with LLM-as-judge evaluation, improving citation precision and validating hallucination resistance on deliberately unanswerable test cases.</li>
-          <li>Resolved a memory-constrained deployment failure by re-architecting the embedding layer from local inference to an API-based approach, cutting deployment memory footprint with zero ongoing infra cost.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-head">
-          <h3>Retail Banking Customer Analytics Platform</h3>
-          <div class="project-links">
-            <!-- TODO: replace with direct repo link -->
-            <a href="https://github.com/Jhanvisoni0" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="chip-row chip-row-tight">
-          <span class="chip chip-sm">Azure</span><span class="chip chip-sm">Databricks</span><span class="chip chip-sm">PySpark</span><span class="chip chip-sm">Delta Lake</span><span class="chip chip-sm">ADF</span><span class="chip chip-sm">Kafka</span><span class="chip chip-sm">Power BI</span><span class="chip chip-sm">Terraform</span>
-        </div>
-        <ul class="project-bullets">
-          <li>Cut reporting cycle from 4 days to 15 minutes with a Gold-layer customer-360 view (loan-to-deposit ratio, transaction velocity), automated via Databricks Workflows on Terraform-provisioned infra with CI/CD.</li>
-          <li>Ingested 50K transaction records and 5K customer profiles from 3 source systems into ADLS Gen2 via ADF and Auto Loader; simulated real-time streaming with Kafka feeding the Bronze layer.</li>
-          <li>Secured credentials via Key Vault, enforced table-level RBAC via Unity Catalog, and flagged anomalous accounts using a batch-scored Isolation Forest model tracked in MLflow.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-head">
-          <h3>Real Assets Investment Intelligence Platform</h3>
-          <div class="project-links">
-            <!-- TODO: replace with direct repo link -->
-            <a href="https://github.com/Jhanvisoni0" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="chip-row chip-row-tight">
-          <span class="chip chip-sm">Databricks</span><span class="chip chip-sm">PySpark</span><span class="chip chip-sm">Delta Lake</span><span class="chip chip-sm">yfinance / FRED APIs</span><span class="chip chip-sm">MLflow</span><span class="chip chip-sm">Unity Catalog</span>
-        </div>
-        <ul class="project-bullets">
-          <li>Engineered an end-to-end investment analytics platform using Medallion Architecture, ingesting 22,635 rows of live market data for 15 assets via yfinance &amp; FRED APIs into Delta Lake on Unity Catalog.</li>
-          <li>Built PySpark pipelines computing daily returns, rolling volatility, Sharpe ratio, and max drawdown — tracking a simulated $10K portfolio to $18,645 (86% return) over 6 years.</li>
-          <li>Joined Fed Funds Rate data with portfolio returns to reveal REITs returned 23.26% annually in low-rate periods vs. -8.17% in rate-transition periods; surfaced via a live executive dashboard with 90-day forecasts.</li>
-        </ul>
-      </article>
-
     </div>
   </div>
 </section>
@@ -301,6 +401,10 @@
       <a href="https://github.com/Jhanvisoni0" target="_blank" rel="noopener" class="contact-link">
         <span class="contact-label">github</span>
         <span class="contact-value">/Jhanvisoni0</span>
+      </a>
+      <a href="JhanviSoni_Resume.pdf" download class="contact-link">
+        <span class="contact-label">résumé</span>
+        <span class="contact-value">Download PDF</span>
       </a>
     </div>
   </div>

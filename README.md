@@ -9,19 +9,21 @@ A terminal/technical-themed portfolio site, structured around Medallion Architec
 
 - `index.html` — all page content and section markup
 - `style.css` — theme, layout, and responsive rules (all colors via CSS variables at the top)
-- `script.js` — hero typewriter effect, scroll-reveal, mobile nav toggle
+- `script.js` — scroll-reveal animation, mobile nav toggle
+- `assets/profile.jpg` — headshot used in the hero
 - No build step, no dependencies. Open `index.html` directly in a browser to preview locally.
 
 ## Sections
 
 | Section | Metaphor | Content |
 |---|---|---|
-| Hero | boot sequence | name, title, quick actions |
-| Bronze Layer | raw ingestion | summary, work experience, education, certifications |
-| Silver Layer | validated & structured | skills grouped by category |
-| Gold Layer | production-ready | featured projects |
+| Hero | — | photo, badge, name, title, bio, quick actions |
+| Gold Layer | production-ready | featured projects (case-study style) |
+| Architecture | system design | Medallion Architecture pipeline diagram + core principles |
+| Bronze Layer | raw ingestion | work experience, education, certifications |
+| Silver Layer | validated & structured | capabilities overview + skills grouped by category |
 | Change Data Capture | streaming updates | blog posts |
-| Contact | — | email, LinkedIn, GitHub |
+| Contact | — | email, LinkedIn, GitHub, résumé download |
 
 ## To customize
 
